@@ -32,7 +32,7 @@ code-server --install-extension "$(pwd)/jupyterlab-light-theme.vsix"
 code-server --install-extension mathematic.vscode-pdf
 
 # Install Python packages (commented for now) NEW!
-uv pip install --system torch dask transformers ipywidgets boto3 openai dotenv optuna lightgbm wandb igraph openpyxl nbconvert botocore==1.40.18 s3fs
+uv pip install --system torch dask transformers ipywidgets boto3 openai dotenv optuna lightgbm wandb igraph openpyxl nbconvert botocore==1.40.18 s3fs matplotlib-venn
 
 # Update VSCode settings
 SETTINGS_FILE="${HOME}/.local/share/code-server/User/settings.json"
