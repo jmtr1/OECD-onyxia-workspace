@@ -13,6 +13,7 @@ sudo rm -f /etc/apt/sources.list.d/*ubuntugis*
 sudo apt clean
 sudo apt update -y
 sudo apt install -y ghostscript libreoffice xvfb fontconfig fonts-liberation2
+tlmgr install tikz-3dplot
 
 # Copy Arial Narrow fonts if available
 mkdir -p "$HOME/.local/share/fonts"
@@ -23,10 +24,10 @@ find "/home/onyxia/work/ai-patents-and-innovation/fonts" -maxdepth 1 -type f \
 fc-cache -f -v
 
 # Install Material Icon Theme extension
-wget --retry-on-http-error=429 https://github.com/jmtr1/temp/raw/refs/heads/main/pkief.material-icon-theme-5.27.0.vsix -O material-icon-theme.vsix
+wget --retry-on-http-error=429 https://github.com/jmtr1/OECD-onyxia-workspace/raw/refs/heads/main/pkief.material-icon-theme-5.27.0.vsix -O material-icon-theme.vsix
 code-server --install-extension "$(pwd)/material-icon-theme.vsix"
 
-wget --retry-on-http-error=429 https://github.com/jmtr1/temp/raw/refs/heads/main/jupyterlab-light-theme.vsix -O jupyterlab-light-theme.vsix
+wget --retry-on-http-error=429 https://github.com/jmtr1/OECD-onyxia-workspace/raw/refs/heads/main/jupyterlab-light-theme.vsix -O jupyterlab-light-theme.vsix
 code-server --install-extension "$(pwd)/jupyterlab-light-theme.vsix"
 
 code-server --install-extension mathematic.vscode-pdf
