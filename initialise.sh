@@ -13,6 +13,7 @@ sudo rm -f /etc/apt/sources.list.d/*ubuntugis*
 sudo apt clean
 sudo apt update -y
 sudo apt install -y ghostscript libreoffice xvfb fontconfig fonts-liberation2 texlive-latex-extra texlive-pictures
+sudo tlmgr install tikz-3dplot
 
 # Copy Arial Narrow fonts if available
 mkdir -p "$HOME/.local/share/fonts"
