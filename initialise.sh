@@ -74,3 +74,5 @@ jq '. + {
 }' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
 
 rm -rf inkscape.appimage material-icon-theme.vsix jupyterlab-light-theme.vsix
+
+mkdir -p "/home/onyxia/work/ai-patents-and-innovation/output/figures"
