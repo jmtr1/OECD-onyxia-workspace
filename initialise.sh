@@ -73,6 +73,8 @@ jq '. + {
     }
 }' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
 
+sudo systemctl restart code-server 2>/dev/null || pkill -f code-server
+
 rm -rf inkscape.appimage material-icon-theme.vsix jupyterlab-light-theme.vsix
 
 mkdir -p "/home/onyxia/work/ai-patents-and-innovation/output/figures"
