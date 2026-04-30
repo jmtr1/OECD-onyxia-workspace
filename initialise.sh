@@ -1,15 +1,9 @@
 #!/bin/bash
 
-# Update VSCode settings FIRST, before code-server fully initialises
 SETTINGS_FILE="${HOME}/.local/share/code-server/User/settings.json"
-
-if [ ! -f "$SETTINGS_FILE" ]; then
-    echo "No existing settings.json found. Creating a new one."
-    mkdir -p "$(dirname "$SETTINGS_FILE")"
-    echo "{}" > "$SETTINGS_FILE"
-fi
-
-jq '. + {
+mkdir -p "$(dirname "$SETTINGS_FILE")"
+cat > "$SETTINGS_FILE" << 'EOF'
+{
     "workbench.colorTheme": "JupyterLab Light Theme",
     "workbench.iconTheme": "material-icon-theme",
     "files.trimTrailingWhitespace": true,
@@ -36,7 +30,8 @@ jq '. + {
         "**/.cache": true,
         "**/squashfs-root": true
     }
-}' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
+}
+EOF
 
 # Install system dependencies and fonts
 
