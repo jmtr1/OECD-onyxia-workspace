@@ -77,4 +77,4 @@ uv pip install --system torch dask transformers ipywidgets boto3 openai dotenv o
 
 rm -rf inkscape.appimage material-icon-theme.vsix jupyterlab-light-theme.vsix
 
-mkdir -p "/home/onyxia/work/ai-patents-and-innovation/output/figures"
+mkdir -p "/home/onyxia/work/ai_patents_and_innovation/output/figures"
