@@ -19,7 +19,6 @@ cat > "$SETTINGS_FILE" << 'EOF'
     "workbench.panel.chat.enabled": false,
     "welcomePage.walkthroughs.openOnInstall": false,
     "editor.gettingStartedPreferences.experimental.showOnStartup": "off",
-    "terminal.integrated.cwd": "/home/onyxia/work/ai_patents_and_innovation",
     "files.exclude": {
         "**/__pycache__": true,
         "**/.env": true,
