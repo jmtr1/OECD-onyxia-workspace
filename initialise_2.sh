@@ -58,6 +58,6 @@ code-server --install-extension mathematic.vscode-pdf
 
 # Install Python packages (commented for now) NEW!
 
-uv pip install --system torch dask transformers ipywidgets boto3 openai dotenv optuna lightgbm wandb igraph openpyxl nbconvert botocore==1.40.18 s3fs matplotlib-venn
+uv pip install --system torch dask transformers ipywidgets boto3 openai dotenv optuna lightgbm wandb igraph openpyxl nbconvert botocore==1.40.18 s3fs matplotlib-venn anthropic
 
 rm -rf inkscape.appimage material-icon-theme.vsix jupyterlab-light-theme.vsix
