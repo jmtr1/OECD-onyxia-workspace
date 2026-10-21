@@ -45,7 +45,7 @@ sudo apt install -y ghostscript libreoffice xvfb fontconfig fonts-liberation2 te
 
 sudo tlmgr install tikz-3dplot
 
-# Copy Arial Narrow fonts if available
+# Copy Arial Narrow fonts if available 
 
 mkdir -p "$HOME/.local/share/fonts"
 
