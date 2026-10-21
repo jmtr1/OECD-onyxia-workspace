@@ -49,7 +49,7 @@ sudo tlmgr install tikz-3dplot
 
 mkdir -p "$HOME/.local/share/fonts"
 
-find "/home/onyxia/work/ai-patents-and-innovation/fonts" -maxdepth 1 -type f \
+find "/home/onyxia/work/ai_patents_and_innovation/fonts" -maxdepth 1 -type f \
 
     \( -iname 'arial-narrow*.ttf' -o -iname 'arialnarrow*.ttf' -o -iname 'arial narrow*.ttf' \
 
